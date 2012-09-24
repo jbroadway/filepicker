@@ -5,7 +5,9 @@ Usage:
 
 1\. Install the app into your apps folder:
 
+```
 git clone git@github.com:jbroadway/filepicker.git apps/filepicker
+```
 
 2\. Add your API key to `apps/filepicker/conf/config.php`.
 
