@@ -1,0 +1,6 @@
+<input name="{{field_name}}" type="filepicker{% if dragdrop %}-dragdrop{% end %}"
+{% if onchange %}	onchange="{{onchange|quotes}}"{% end %}
+{% for key, value in options %}
+	data-fp-{{key}}="{{value|quotes}}"
+{% end %}
+/>
