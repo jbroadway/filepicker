@@ -31,12 +31,13 @@
  * Note that you can skip the `data-fp-` prefix on option names.
  */
 
-$page->add_script ('http://api.filepicker.io/v0/filepicker.js');
+$page->add_script ('http://api.filepicker.io/v0/filepicker.js', 'tail');
 $page->add_script (
 	sprintf (
 		'<script>filepicker.setKey("%s");</script>',
 		$appconf['General']['api_key']
-	)
+	),
+	'tail'
 );
 
 if (isset ($data['dragdrop'])) {
